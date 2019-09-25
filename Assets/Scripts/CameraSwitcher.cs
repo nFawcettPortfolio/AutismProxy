@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraSwitcher : MonoBehaviour
 {
-    public GameObject _firstPersonCamera;
+    public GameObject _thirdPersonCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class CameraSwitcher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            _firstPersonCamera.SetActive(!_firstPersonCamera.activeSelf);
+            _thirdPersonCamera.SetActive(!_thirdPersonCamera.activeSelf);
         }
     }
 }
