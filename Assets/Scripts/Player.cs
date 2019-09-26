@@ -22,12 +22,12 @@ public class Player : MonoBehaviour
         float input = Input.GetAxis("Horizontal");
         transform.Rotate(transform.rotation.x, input * Time.deltaTime * _rotationSpeed, transform.rotation.z);
 
-        if(Input.GetKey(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.forward * Time.deltaTime * _speed);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.back * Time.deltaTime * _speed);
         }
