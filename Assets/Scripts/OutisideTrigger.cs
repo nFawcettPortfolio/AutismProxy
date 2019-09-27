@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class OutisideTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -16,10 +16,12 @@ public class OutisideTrigger : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
+    private void OnTriggerEnter(Collider obj) {
 
-         Debug.Log("entered");
+        print("Entered the store: " + obj.gameObject.name);
         
+    }
+    private void OnTriggerExit(Collider obj) {
+        print("Left the store: " + obj.gameObject.name);
     }
 }
