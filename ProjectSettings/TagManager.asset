@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Cola1
+  - Cola2
+  - Cola3
+  - Cola4
+  - Cola5
   layers:
   - Default
   - TransparentFX
